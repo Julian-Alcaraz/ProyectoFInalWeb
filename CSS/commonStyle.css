@@ -1,15 +1,25 @@
+
 .titulo{
     border: 1px solid #000000;
+    display: flex;
+    justify-content: center;
 
 }
+.titulo .login{
+    display: flex;
+    justify-content: end;
+}
+
+
 .contenido{
     border: 1px solid #000000;
 
 }
 .menu{
     border: 1px solid;
-
+    display: flex;
+    justify-content: center;
 }
 .menu table td a{
-    
+
 }
