@@ -1,13 +1,28 @@
 
+body{
+    /*background-color:#FFDEAD;
+    background-color:#F5DEB3;
+    background-color:#D2B48C;*/
+    background-color:#FFF8DC;
+    font-family:Helvetica;
+    
+}
+/*ptrabajo con el titulo y la posicion de sus elementos*/
 .titulo{
     border: 1px solid #000000;
+    /**/
     display: flex;
-    justify-content: center;
-
+    align-items: center;
+}
+.titulo .nombre{
+   width: fit-content;
+   margin: 0 auto;
+   font-size: 150% ;
+   /* display: flex;
+   transform: translate(45%); */
 }
 .titulo .login{
-    display: flex;
-    justify-content: end;
+    margin-right: 5%;
 }
 
 
