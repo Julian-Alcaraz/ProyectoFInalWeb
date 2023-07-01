@@ -72,11 +72,16 @@ form table td p{
 .titulo .nombre{
    width: fit-content;
    margin: 0 auto;
-   font-size: 150% ;
+   margin-top: -20px;
+   margin-bottom: -20px;
+   font-size: 180% ;
    /* display: flex;
    transform: translate(45%); */
 }
 .titulo .login{
+    position: absolute;
+    left: 100%;
+    transform: translate(-300%);
     margin-right: 3%;
 }
 .btnLogin{
@@ -85,18 +90,46 @@ form table td p{
     border-radius: 100%;
     padding: 50%;
 }
-.btnLogin:hover{
+.btnLogin:hover, #salir-btn:hover{
     background-color: grey;
 }
 .fa-solid {
     font-size:110% ;
     color: #D2B48C;
 }
-.contenido{
-    border: 1px solid #000000;
-}
+
+/* MENUUU */
 .menu{
-    border: 1px solid;
     display: flex;
     justify-content: center;
+    border-top: solid 1px black ;
+}
+.menu ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0%;
+}
+.menu ul li{
+    display: inline-block;
+} 
+.menu ul li a{
+    text-decoration: none;
+    font-size: 140%;
+    color: #bd8e51;
+    display: block;
+    padding: 8px;
+}
+.menu ul li a:hover{
+    background-color: #bd8e51 ;
+    color: white;
+    border:solid 1px white;
+    padding: 10px;
+    border-radius: 12px;
+}
+.menu ul li a i:hover{
+    color: white;
+}
+/* COntenido */
+.contenido{
+    border: 1px solid #000000;
 }

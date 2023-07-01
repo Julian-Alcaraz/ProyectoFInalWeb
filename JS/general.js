@@ -5,6 +5,7 @@
 function abrir(){
     document.getElementById("sidemenu_login").style.display = 'block';
     document.getElementById("sidemenu_registrar").style.display= 'none';
+    document.getElementById('btnlogin').style.display= 'none';
 
 }
 function cerrar(){
