@@ -1,25 +1,123 @@
 <html>
-    <head>
-        <title></title>
-        <link rel="stylesheet" type="text/css" href="../CSS/commonStyle.css" media="screen" />
-        <script></script>
-    </head>
-    <body>
-        <div class="titulo" >
-            <!-- nombre de la marca logo y boton de login-->
+
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../CSS/commonStyle.css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="../JS/general.js"></script>
+</head>
+
+<body>
+    <div id="sidemenu_login">
+        <form action="" id="form">
+            <button id="salir-btn" class="salir" onclick="return cerrar()">
+                <i class="fa-sharp fa-solid fa-arrow-left"></i>
+            </button>
             <table>
-                <td>
-                    <h1>VICKOTA'S</h1>
-                </td>
-                <td>
-                    <img src="xxxx" alt=""><!--Logo-->
-                </td>
-                <td>
-                    <h3><a href="">Login</a></h3><!--boton de login-->
-                </td>
+                <caption>
+                    <h1>Login</h1>
+                </caption>
+                <tr>
+                    <td>
+                        <p>Mail</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input id="mail" type="text" class="texto" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Contraseña</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="password" class="texto" id="contra" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" class="submit" onclick="return validarLogueo()" value="Loguear" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" class="submit" onclick="return abrirRegistrar()" value="Registrar" />
+                    </td>
+                </tr>
             </table>
+        </form>
+    </div>
+    <div id="sidemenu_registrar">
+        <form action="" id="formR">
+            <button id="salir-btn" class="salir" onclick="return cerrar()">
+                <i class="fa-sharp fa-solid fa-arrow-left"></i>
+            </button>
+            <table>
+                <caption>
+                    <h1>Registrar</h1>
+                </caption>
+                <tr>
+                    <td>
+                        <p>Nombre</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input id="nombre" type="text" class="texto" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Apellido</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input id="apellido" type="text" class="texto" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Mail:</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input id="mailR" type="text" class="texto" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Contraseña</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="password" class="texto" id="contraR" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" class="submit" onclick="return validarRegistrar()" value="Registrar" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" class="submit" onclick="return abrir()" value="Loguear" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="main-container">
+
+        <div class="titulo">
+            <!-- nombre de la marca logo y boton de login-->
+            <div class="nombre">
+                <h1>VICKOTA'S</h1>
+            </div>
+            <div class="logo"><img src="xxxx" alt="" /><!--Logo--></div>
+            <div class="login">
+                <button onclick="return abrir()" class="btnLogin" id="btnlogin">
+                    <i class="fa-solid fa-user-large"></i>
+                </button>
+                <!--<h3><a href="Login.html">Login</a></h3>boton de login-->
+            </div>
         </div>
-        <div class="menu" >
+        <div class="menu">
             <!-- links a cada seccion de la tienda -->
             <table>
                 <td><a href="Inicio.html">Inicio</a></td>
@@ -34,5 +132,7 @@
             <!-- contenido de cada seccion -->
             <p>asjdkjasndjansdnadasdas.dnasd</p>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

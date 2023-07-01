@@ -1,10 +1,8 @@
-
 body{
     background-color:#FFF8DC;
     font-family:Helvetica;
     margin: 0 auto;
 }
-
 #sidemenu_login, #sidemenu_registrar{
     background-color: #D2B48C;
     border-radius: 20px 0px 0px 20px;
@@ -52,7 +50,6 @@ form table td p{
     margin-top: 5px;
     margin-bottom: 15px;
 }
-
 .registrar{
     font-size: 100%; 
     background-color: #FFF8DC ;
@@ -64,7 +61,6 @@ form table td p{
     border-radius: 10px;
     margin-top: 20px;
 }
-
 .botonera{
     text-align: center;
 }
@@ -88,7 +84,6 @@ form table td p{
     background-color: white;
     border-radius: 100%;
     padding: 50%;
-    
 }
 .btnLogin:hover{
     background-color: grey;
@@ -97,16 +92,11 @@ form table td p{
     font-size:110% ;
     color: #D2B48C;
 }
-
 .contenido{
     border: 1px solid #000000;
-
 }
 .menu{
     border: 1px solid;
     display: flex;
     justify-content: center;
-}
-.menu table td a{
-
 }
