@@ -1,16 +1,75 @@
 
 body{
-    /*background-color:#FFDEAD;
-    background-color:#F5DEB3;
-    background-color:#D2B48C;*/
     background-color:#FFF8DC;
     font-family:Helvetica;
+    margin: 0 auto;
+}
+
+#sidemenu_login, #sidemenu_registrar{
+    background-color: #D2B48C;
+    border-radius: 20px 0px 0px 20px;
+    position: fixed;
+    width: 400px;
+    height: 100%;
+    left: 100%;
+    transform: translate(-100%);
+    display: none;
+    font-size: 30px;    
+}
+.salir{
+    position: absolute;
+    margin: 4%;
+    border-radius: 100%;
+    padding: 2%;
+    border: solid 1px black;
+}
+form table{
+    padding: 0% 15% ;
+}
+.texto{
+    margin-bottom: 7px;
+    margin-top: 7px;
+    padding: 2%;
+    font-size: 130%;
+    border-radius: 7px;
     
+}
+form table td p{
+    font-size: 20px;
+}
+#sidemenu_login tr,#sidemenu_registrar tr{
+    text-align: center;
+}
+.submit{
+    font-size: 100%; 
+    background-color: #FFF8DC ;
+    text-decoration: none;
+    color: black;
+    padding: 3%;
+    border: solid 1px ;
+    border-color: black;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.registrar{
+    font-size: 100%; 
+    background-color: #FFF8DC ;
+    text-decoration: none;
+    color: black;
+    padding: 3%;
+    border: solid 1px ;
+    border-color: black;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.botonera{
+    text-align: center;
 }
 /*ptrabajo con el titulo y la posicion de sus elementos*/
 .titulo{
-    border: 1px solid #000000;
-    /**/
     display: flex;
     align-items: center;
 }
@@ -22,9 +81,22 @@ body{
    transform: translate(45%); */
 }
 .titulo .login{
-    margin-right: 5%;
+    margin-right: 3%;
 }
-
+.btnLogin{
+    border: solid 1px black;
+    background-color: white;
+    border-radius: 100%;
+    padding: 50%;
+    
+}
+.btnLogin:hover{
+    background-color: grey;
+}
+.fa-solid {
+    font-size:110% ;
+    color: #D2B48C;
+}
 
 .contenido{
     border: 1px solid #000000;
