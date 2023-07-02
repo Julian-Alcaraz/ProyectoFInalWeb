@@ -129,7 +129,42 @@ form table td p{
 .menu ul li a i:hover{
     color: white;
 }
-/* COntenido */
-.contenido{
+/* COntenido inicio*/
+.contenido_inicio{
     border: 1px solid #000000;
+    display: flex;
+    justify-content: center;
+    
+}
+.contenido_inicio ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0%;
+}
+.contenido_inicio .columnas{
+    display: inline-block;
+    margin: 20px;
+}
+.contenido_inicio .columnas li{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Contenido Productos */
+.contenido_productos{
+    border-top: solid 1px black ;
+}
+.contenido_productos .filtros{
+    display: flex;
+    justify-content: center;
+}
+.contenido_productos .filtros ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0%;
+}
+.contenido_productos .filtros li{
+    display: inline-block;
 }

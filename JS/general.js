@@ -1,7 +1,3 @@
-// const btnLogin = document.getElementById("btnLogin")
-// const salirLogin = document.getElementById("salir-btn");
-// var menu = document.getElementById("sidemenu");
-
 function abrir(){
     document.getElementById("sidemenu_login").style.display = 'block';
     document.getElementById("sidemenu_registrar").style.display= 'none';
@@ -14,9 +10,6 @@ function cerrar(){
 function abrirRegistrar(){
     document.getElementById("sidemenu_registrar").style.display= 'block';
     document.getElementById("sidemenu_login").style.display = 'none';
-}
-function validarLogueo(){
-
 }
 function validarRegistrar(){
     var apellido=document.getElementById("apellido");
