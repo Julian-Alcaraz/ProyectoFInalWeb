@@ -77,3 +77,33 @@ function validarLogueo(){
     }
 } 
 
+// function adjustGrid() {
+//     const container = document.getElementById('products-container');
+//     const containerWidth = container.offsetWidth;
+//     const itemWidth = container.querySelector(':first-child').offsetWidth;
+//     const columns = Math.floor(containerWidth / itemWidth);
+  
+//     container.style.gridTemplateColumns = `repeat(auto-fill, minmax(${itemWidth}px, 1fr))`;
+//     container.style.gridTemplateRows = `repeat(auto-fill, minmax(${itemWidth}px, 1fr))`;
+// }
+
+// window.addEventListener('resize', adjustGrid);
+function adjustGrid() {
+    const container = document.getElementById('products-container');
+    const wrapper = document.getElementById('products-wrapper');
+    const containerWidth = container.offsetWidth;
+    const wrapperWidth = wrapper.offsetWidth;
+    const itemWidth = wrapper.querySelector(':first-child').offsetWidth;
+    const columns = Math.floor(wrapperWidth / itemWidth);
+  
+    wrapper.style.gridTemplateColumns = `repeat(auto-fill, minmax(${itemWidth}px, 1fr))`;
+    wrapper.style.gridTemplateRows = `repeat(auto-fill, minmax(${itemWidth}px, 1fr))`;
+  
+    if (columns > 1) {
+      wrapper.style.maxWidth = `${columns * itemWidth}px`;
+    } else {
+      wrapper.style.maxWidth = '100%';
+    }
+  }
+  
+  window.addEventListener('resize', adjustGrid);
