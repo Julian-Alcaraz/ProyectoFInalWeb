@@ -133,19 +133,33 @@
         <div class="contenido_productos">
             <div class="filtros">
                 <ul>
-                    <li>Calza Larga</li>
-                    <li>Calza pescadora</li>
-                    <li>Calza Biker</li>
-                    <li>Short</li>
-                    <li>Tops</li>
-                    <li>Remeras Termicas</li>
-                    <li>todos</li>
+                    <li><button class="botones" id="largas" onclick="return mostrarTipo('calza_larga','largas')">Calza Larga</button></li>
+                    <li><button class="botones"id="pescadoras"onclick="return mostrarTipo('calza_pescadora','pescadoras')">Calza pescadora</button></li>
+                    <li><button class="botones"id="biker"onclick="return mostrarTipo('calza_biker','biker')">Calza Biker</button></li>
+                    <li><button class="botones"id="short" onclick="return mostrarTipo('short','short')">Short</button>  </li>
+                    <li><button class="botones"id="top" onclick="return mostrarTipo('tops','top')">Tops</button> </li>
+                    <li><button class="botones"onclick="return mostrarTipo('')">Todos</button></li>
                 </ul>
             </div>
             <div class="allProducts">
-                <div class="producto" id="tipoProducto" >
-                    <ul>
-                        <li><h3>nombre producto</h3></li>
+                 <!--caja con un producto(Css producto para todos, van a tener el mismo formato, diferencio los tipos de producto con id)-->
+                <div class="producto" id="calza_larga" >
+                    <div class="calza_larga">
+                        <ul>
+                            <li><h3>calza_larga</h3></li>
+                            <li> <img src="" alt="imagen" width="150px" ></li>
+                            <li>
+                                <ul class="botoneraProducto">
+                                    <li><p>$XXXX</p></li>
+                                    <li><button class="addCarrito">Añadir<i class="fa-solid fa-cart-shopping"></i></button></li>
+                                </ul>
+                            </li>
+                        </ul>   
+                    </div>
+                </div>
+                <div class="producto" id="calza_larga">
+                        <ul>
+                        <li><h3>calza_larga</h3></li>
                         <li> <img src="" alt="imagen" width="150px" ></li>
                         <li>
                             <ul class="botoneraProducto">
@@ -155,9 +169,117 @@
                         </li>
                     </ul>   
                 </div>
-                <div class="producto" id="tipoProducto">
+                <div class="producto" id="calza_larga">
                     <ul>
-                        <li><h3>nombre producto</h3></li>
+                        <li><h3>calza_larga</h3></li>
+                        <li> <img src="" alt="imagen" width="150px" ></li>
+                        <li>
+                            <ul class="botoneraProducto">
+                                <li><p>$XXXX</p></li>
+                                <li><button class="addCarrito">Añadir<i class="fa-solid fa-cart-shopping"></i></button></li>
+                            </ul>
+                        </li>
+                    </ul>   
+                </div>               
+                <div class="producto" id="calza_larga">
+                    <ul>
+                        <li><h3>calza_larga</h3></li>
+                        <li> <img src="" alt="imagen" width="150px" ></li>
+                        <li>
+                            <ul class="botoneraProducto">
+                                <li><p>$XXXX</p></li>
+                                <li><button class="addCarrito">Añadir<i class="fa-solid fa-cart-shopping"></i></button></li>
+                            </ul>
+                        </li>
+                    </ul>   
+                </div>               
+                <div class="producto" id="calza_pescadora">
+                    <ul>
+                        <li><h3>calza_pescadora</h3></li>
+                        <li> <img src="" alt="imagen" width="150px" ></li>
+                        <li>
+                            <ul class="botoneraProducto">
+                                <li><p>$XXXX</p></li>
+                                <li><button class="addCarrito">Añadir<i class="fa-solid fa-cart-shopping"></i></button></li>
+                            </ul>
+                        </li>
+                    </ul>   
+                </div>               
+                <div class="producto" id="calza_pescadora">
+                    <ul>
+                        <li><h3>calza_pescadora</h3></li>
+                        <li> <img src="" alt="imagen" width="150px" ></li>
+                        <li>
+                            <ul class="botoneraProducto">
+                                <li><p>$XXXX</p></li>
+                                <li><button class="addCarrito">Añadir<i class="fa-solid fa-cart-shopping"></i></button></li>
+                            </ul>
+                        </li>
+                    </ul>   
+                </div>               
+                <div class="producto" id="calza_pescadora">
+                    <ul>
+                        <li><h3>calza_pescadora</h3></li>
+                        <li> <img src="" alt="imagen" width="150px" ></li>
+                        <li>
+                            <ul class="botoneraProducto">
+                                <li><p>$XXXX</p></li>
+                                <li><button class="addCarrito">Añadir<i class="fa-solid fa-cart-shopping"></i></button></li>
+                            </ul>
+                        </li>
+                    </ul>   
+                </div>               
+                <div class="producto" id="calza_pescadora">
+                    <ul>
+                        <li><h3>calza_pescadora</h3></li>
+                        <li> <img src="" alt="imagen" width="150px" ></li>
+                        <li>
+                            <ul class="botoneraProducto">
+                                <li><p>$XXXX</p></li>
+                                <li><button class="addCarrito">Añadir<i class="fa-solid fa-cart-shopping"></i></button></li>
+                            </ul>
+                        </li>
+                    </ul>   
+                </div>               
+                <div class="producto" id="calza_biker">
+                    <ul>
+                        <li><h3>calza_biker</h3></li>
+                        <li> <img src="" alt="imagen" width="150px" ></li>
+                        <li>
+                            <ul class="botoneraProducto">
+                                <li><p>$XXXX</p></li>
+                                <li><button class="addCarrito">Añadir<i class="fa-solid fa-cart-shopping"></i></button></li>
+                            </ul>
+                        </li>
+                    </ul>   
+                </div>               
+                <div class="producto" id="calza_biker">
+                    <ul>
+                        <li><h3>calza_biker</h3></li>
+                        <li> <img src="" alt="imagen" width="150px" ></li>
+                        <li>
+                            <ul class="botoneraProducto">
+                                <li><p>$XXXX</p></li>
+                                <li><button class="addCarrito">Añadir<i class="fa-solid fa-cart-shopping"></i></button></li>
+                            </ul>
+                        </li>
+                    </ul>   
+                </div>               
+                <div class="producto" id="calza_biker">
+                    <ul>
+                        <li><h3>calza_biker</h3></li>
+                        <li> <img src="" alt="imagen" width="150px" ></li>
+                        <li>
+                            <ul class="botoneraProducto">
+                                <li><p>$XXXX</p></li>
+                                <li><button class="addCarrito">Añadir<i class="fa-solid fa-cart-shopping"></i></button></li>
+                            </ul>
+                        </li>
+                    </ul>   
+                </div>               
+                <div class="producto" id="calza_biker">
+                    <ul>
+                        <li><h3>calza_biker</h3></li>
                         <li> <img src="" alt="imagen" width="150px" ></li>
                         <li>
                             <ul class="botoneraProducto">
@@ -167,9 +289,9 @@
                         </li>
                     </ul>   
                 </div>
-                <div class="producto" id="tipoProducto">
+                <div class="producto" id="short">
                     <ul>
-                        <li><h3>nombre producto</h3></li>
+                        <li><h3>short</h3></li>
                         <li> <img src="" alt="imagen" width="150px" ></li>
                         <li>
                             <ul class="botoneraProducto">
@@ -179,9 +301,9 @@
                         </li>
                     </ul>   
                 </div>
-                <div class="producto" id="tipoProducto">
+                <div class="producto" id="short">
                     <ul>
-                        <li><h3>nombre producto</h3></li>
+                        <li><h3>short</h3></li>
                         <li> <img src="" alt="imagen" width="150px" ></li>
                         <li>
                             <ul class="botoneraProducto">
@@ -191,9 +313,9 @@
                         </li>
                     </ul>   
                 </div>
-                <div class="producto" id="tipoProducto">
+                <div class="producto" id="short">
                     <ul>
-                        <li><h3>nombre producto</h3></li>
+                        <li><h3>short</h3></li>
                         <li> <img src="" alt="imagen" width="150px" ></li>
                         <li>
                             <ul class="botoneraProducto">
@@ -203,9 +325,9 @@
                         </li>
                     </ul>   
                 </div>
-                <div class="producto" id="tipoProducto">
+                <div class="producto" id="short">
                     <ul>
-                        <li><h3>nombre producto</h3></li>
+                        <li><h3>short</h3></li>
                         <li> <img src="" alt="imagen" width="150px" ></li>
                         <li>
                             <ul class="botoneraProducto">
@@ -215,9 +337,9 @@
                         </li>
                     </ul>   
                 </div>
-                <div class="producto" id="tipoProducto">
+                <div class="producto" id="tops">
                     <ul>
-                        <li><h3>nombre producto</h3></li>
+                        <li><h3>Tops</h3></li>
                         <li> <img src="" alt="imagen" width="150px" ></li>
                         <li>
                             <ul class="botoneraProducto">
@@ -227,9 +349,9 @@
                         </li>
                     </ul>   
                 </div>
-                <div class="producto" id="tipoProducto">
+                <div class="producto" id="tops">
                     <ul>
-                        <li><h3>nombre producto</h3></li>
+                        <li><h3>Tops</h3></li>
                         <li> <img src="" alt="imagen" width="150px" ></li>
                         <li>
                             <ul class="botoneraProducto">
@@ -239,7 +361,31 @@
                         </li>
                     </ul>   
                 </div>
-                <div class="producto" id="tipoProducto"></div><!--caja con un producto(Css producto para todos, van a tener el mismo formato, diferencio los tipos de producto con id)-->
+                <div class="producto" id="tops">
+                    <ul>
+                        <li><h3>Tops</h3></li>
+                        <li> <img src="" alt="imagen" width="150px" ></li>
+                        <li>
+                            <ul class="botoneraProducto">
+                                <li><p>$XXXX</p></li>
+                                <li><button class="addCarrito">Añadir<i class="fa-solid fa-cart-shopping"></i></button></li>
+                            </ul>
+                        </li>
+                    </ul>   
+                </div>
+                <div class="producto" id="tops">
+                    <ul>
+                        <li><h3>Tops</h3></li>
+                        <li> <img src="" alt="imagen" width="150px" ></li>
+                        <li>
+                            <ul class="botoneraProducto">
+                                <li><p>$XXXX</p></li>
+                                <li><button class="addCarrito">Añadir<i class="fa-solid fa-cart-shopping"></i></button></li>
+                            </ul>
+                        </li>
+                    </ul>   
+                </div>
+               
             </div>
         </div>
     </div>

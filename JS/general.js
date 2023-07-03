@@ -1,8 +1,25 @@
+function mostrarTipo(tipoCalza,idboton){
+    // document.write(idboton)
+    //oculto todos
+    var productos = document.getElementsByClassName("producto");
+        for (var i=0;  i < productos.length; i++) {
+            productos[i].style.display= "none";
+        }
+    //muestro los que necesito
+    for (var i=0;  i < productos.length; i++) {
+        if(tipoCalza!=''){
+            if (productos[i].id == tipoCalza){
+                productos[i].style.display= "block";
+            }
+        }else{
+            productos[i].style.display= "block";
+        }
+    }    
+}
 function abrir(){
     document.getElementById("sidemenu_login").style.display = 'block';
     document.getElementById("sidemenu_registrar").style.display= 'none';
     document.getElementById('btnlogin').style.display= 'none';
-
 }
 function cerrar(){
     document.getElementById("sidemenu_login").style.display = 'none';
@@ -76,18 +93,6 @@ function validarLogueo(){
         document.getElementById("form").reset();
     }
 } 
-
-// function adjustGrid() {
-//     const container = document.getElementById('products-container');
-//     const containerWidth = container.offsetWidth;
-//     const itemWidth = container.querySelector(':first-child').offsetWidth;
-//     const columns = Math.floor(containerWidth / itemWidth);
-  
-//     container.style.gridTemplateColumns = `repeat(auto-fill, minmax(${itemWidth}px, 1fr))`;
-//     container.style.gridTemplateRows = `repeat(auto-fill, minmax(${itemWidth}px, 1fr))`;
-// }
-
-// window.addEventListener('resize', adjustGrid);
 function adjustGrid() {
     const container = document.getElementById('products-container');
     const wrapper = document.getElementById('products-wrapper');
@@ -105,5 +110,4 @@ function adjustGrid() {
       wrapper.style.maxWidth = '100%';
     }
   }
-  
   window.addEventListener('resize', adjustGrid);

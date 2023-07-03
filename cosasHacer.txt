@@ -1,3 +1,7 @@
 * LISTA
 	* Terminar Menu y deiseñar boton login HECHO
 	* diseñar paginas
+	*añadir todas las fotos
+	*funcion de añadir al carrito con el boton de los productos
+	*botones de logue :hover detalles
+	
