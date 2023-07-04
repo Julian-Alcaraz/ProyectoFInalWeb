@@ -111,3 +111,81 @@ function adjustGrid() {
     }
   }
   window.addEventListener('resize', adjustGrid);
+function mostrarProductos50(){
+    
+    document.getElementById('50').style.display = "block";
+    document.getElementById('25').style.display = "none";
+
+}
+function mostrarProductos25(){
+    document.getElementById('25').style.display = "block";
+    document.getElementById('50').style.display = "none";
+    
+}
+//carro
+// Variables globales
+let cartItems = [];
+let totalPrice = 0;
+let isCartOpen = false;
+
+// Función para agregar un avión al carrito
+function addToCart(name, price) {
+  const item = {
+    name: name,
+    price: price
+  };
+  cartItems.push(item);
+  totalPrice += price;
+  updateCart();
+}
+
+// Función para vaciar el carrito
+function clearCart() {
+  cartItems = [];
+  totalPrice = 0;
+  updateCart();
+}
+
+// Función para actualizar el carrito
+function updateCart() {
+  const cartList = document.getElementById('cart-list');
+  const totalPriceElement = document.getElementById('total-price');
+
+  // Vaciar la lista del carrito
+  cartList.innerHTML = '';
+
+  // Agregar cada elemento del carrito al HTML
+  cartItems.forEach((item) => {
+    const listItem = document.createElement('li');
+    listItem.innerText = `${item.name} - $${item.price}`;
+    cartList.appendChild(listItem);
+  });
+
+  // Actualizar el precio total
+  totalPriceElement.innerText = `Total: $${totalPrice}`;
+}
+
+// Función para mostrar u ocultar el listado del carrito
+function toggleCart() {
+  const cartSection = document.querySelector('.cart-section');
+  isCartOpen = !isCartOpen;
+
+  if (isCartOpen) {
+    cartSection.style.display = 'block';
+  } else {
+    cartSection.style.display = 'none';
+  }
+}
+
+// Función para manejar el evento de clic en el botón del carrito en la appbar
+function handleCartToggle() {
+  toggleCart();
+}
+
+// Evento click para vaciar el carrito
+const clearCartBtn = document.getElementById('clear-cart-btn');
+clearCartBtn.addEventListener('click', clearCart);
+
+// Evento click para mostrar u ocultar el listado del carrito
+const cartToggleBtn = document.getElementById('cart-toggle-btn');
+cartToggleBtn.addEventListener('click', handleCartToggle);
