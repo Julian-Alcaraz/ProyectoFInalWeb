@@ -128,12 +128,14 @@
                 <li><a  href="#" id="cart-toggle-btn" onclick="handleCartToggle()"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </div>
-        <section class="cart-section">
-            <h2>Carrito de Compras</h2>
-            <ul id="cart-list"></ul>
-            <p id="total-price">Total: $0</p>
-            <button id="clear-cart-btn" onclick="clearCart()" >Vaciar Carrito</button>
-        </section>
+        <div class="centrar">
+            <section class="cart-section">
+                <h2>Carrito de Compras</h2>
+                <ul id="cart-list"></ul>
+                <p id="total-price">Total: $0</p>
+                <button id="clear-cart-btn" onclick="clearCart()" >Vaciar Carrito</button>
+            </section>
+        </div>
         <div class="contenido_inicio">   
             <!-- contenido de cada seccion -->
             <div class="columna_izquierda">
@@ -180,14 +182,13 @@
                                     <li>
                                         <h3>producto 25</h3>
                                     </li>
-                                    <li> <img src="" alt="imagen" width="150px"></li>
+                                    <li> <img src="../images/Combojpeg.jpeg" alt="imagen" width="150px"></li>
                                     <li>
                                         <ul class="botoneraProducto">
                                             <li>
-                                                <p>$XXXX</p>
+                                                <p>$11000</p>
                                             </li>
-                                            <li><button class="addCarrito">Añadir<i
-                                                        class="fa-solid fa-cart-shopping"></i></button>
+                                            <li><button class="addCarrito"onclick="addToCart('Combo en descuento',11000)">Añadir<i class="fa-solid fa-cart-shopping"></i></button>
                                             </li>
                                         </ul>
                                     </li>
@@ -202,15 +203,14 @@
                                     <li>
                                         <h3>producto 25</h3>
                                     </li>
-                                    <li> <img src="" alt="imagen" width="150px"></li>
+                                    <li> <img src="../images/larga2.jpg" alt="imagen" width="150px"></li>
                                     <li>
 
                                         <ul class="botoneraProducto">
                                             <li>
-                                                <p>$XXXX</p>
+                                                <p>$6750</p>
                                             </li>
-                                            <li><button class="addCarrito">Añadir<i
-                                                        class="fa-solid fa-cart-shopping"></i></button>
+                                            <li><button class="addCarrito" onclick="addToCart('Calza larga 3',6750)">Añadir<i class="fa-solid fa-cart-shopping"></i></button>
                                             </li>
                                         </ul>
                                     </li>
@@ -226,41 +226,31 @@
                 <table>
                     <tr>
                         <td>
-                            <div class="producto" id="tipoProducto">
+                            <div class="producto" id="tops">
                                 <ul>
-                                    <li>
-                                        <h3>producto 50</h3>
-                                    </li>
-                                    <li> <img src="" alt="imagen" width="150px"></li>
+                                    <li><h3>Top 50%</h3></li>
+                                    <li> <img src="../images/top3.jpeg" alt="imagen" width="150px" ></li>
                                     <li>
                                         <ul class="botoneraProducto">
-                                            <li>
-                                                <p>$XXXX</p>
-                                            </li>
-                                            <li><button class="addCarrito">Añadir<i class="fa-solid fa-cart-shopping"></i></button>
-                                            </li>
+                                            <li><p>$1750</p></li>
+                                            <li><button class="addCarrito"  onclick="addToCart('Top marmolado',1750)">Añadir<i class="fa-solid fa-cart-shopping"></i></button></li>
                                         </ul>
                                     </li>
-                                </ul>
+                                </ul>   
                             </div>
                         </td>
                         <td>
-                            <div class="producto" id="tipoProducto">
+                            <div class="producto" id="calza_biker">
                                 <ul>
-                                    <li>
-                                        <h3>producto 50</h3>
-                                    </li>
-                                    <li> <img src="" alt="imagen" width="150px"></li>
+                                    <li><h3>Calza Biker 50%</h3></li>
+                                    <li> <img src="../images/biker2.jpeg" alt="imagen" width="150px" ></li>
                                     <li>
                                         <ul class="botoneraProducto">
-                                            <li>
-                                                <p>$XXXX</p>
-                                            </li>
-                                            <li><button class="addCarrito">Añadir<i class="fa-solid fa-cart-shopping"></i></button>
-                                            </li>
+                                            <li><p>$2500</p></li>
+                                            <li><button class="addCarrito"onclick="addToCart('Biker violeta y celeste',2500)">Añadir<i class="fa-solid fa-cart-shopping"></i></button></li>
                                         </ul>
                                     </li>
-                                </ul>
+                                </ul>   
                             </div>
                         </td>
                     </tr>
